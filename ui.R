@@ -29,7 +29,7 @@ shinyUI(navbarPage("Coursera's Data Science Capstone: Final Project",
                               #includeMarkdown("Overview.md")
                             ) ),
                    
-                   #tabPanel("Instructions",
+                   tabPanel("Instructions",
                    mainPanel(
                      #includeMarkdown("README.md")
                    )
