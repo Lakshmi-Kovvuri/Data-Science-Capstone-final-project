@@ -12,7 +12,7 @@
   ### Shiny Application for this app is in the following link:
   ### https://lakshmikovvuri.shinyapps.io/wordPredictorApp/
   
-  ### Source code for the prediction modeling algorithm and shiny app's is in the following link:
+  ### Source code for the prediction modeling algorithm and shiny app is in the following link:
   ###  https://github.com/Lakshmi-Kovvuri/Data-Science-Capstone-final-project
   
   
