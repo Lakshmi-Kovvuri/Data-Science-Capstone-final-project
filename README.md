@@ -7,9 +7,10 @@
   #### Understanding the problem, Data acquisition and cleaning, Exploratory analysis, Statistical modeling, Predictive modeling, Creative exploration, Creating a data product and Creating a short slide deck pitching.
   
   ### Mile stone report for this project is in the following link:
+  ### https://rpubs.com/LakshmiKovvuri/671767
   
   ### Shiny Application for this app is in the following link:
-  https://lakshmikovvuri.shinyapps.io/wordPredictorApp/
+  ### https://lakshmikovvuri.shinyapps.io/wordPredictorApp/
   
   ### Source code for the prediction modeling can be found in the following link:
   
