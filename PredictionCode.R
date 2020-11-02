@@ -1,4 +1,4 @@
-parimiPrediction.R
+# PredictionCode.R
 suppressPackageStartupMessages({
       library(tidytext)
       library(tidyverse)
@@ -10,6 +10,7 @@ suppressPackageStartupMessages({
  setwd("C:/Users/laksk/Documents/daisy")
 
 # Download and unzip the Data
+
 if(!file.exists("Coursera-SwiftKey.zip")){
       download.file("https://d396qusza40orc.cloudfront.net/dsscapstone/dataset/Coursera-SwiftKey.zip", "Coursera-SwiftKey.zip")
       unzip("Coursera-SwiftKey.zip")
@@ -72,7 +73,8 @@ rm(list = c("twitter_sample", "news_sample", "blogs_sample", "sample_percentage"
 data("stop_words")
 
 # remove profanity
-# http://www.bannedwordlist.com/
+# Use this link to download the banned words http://www.bannedwordlist.com/
+
 swear_words <- read_delim("C:/Users/laksk/Documents/daisy/BannedWords.csv", delim = "\n", col_names = FALSE)
 swear_words <- unnest_tokens(swear_words, word, X1)
 
@@ -173,9 +175,9 @@ quint_words <- quintgram_tiny %>%
 sext_words <- sextgram_tiny %>%
       separate(sextgram, c("word1", "word2", "word3", "word4", "word5", "word6"), sep = " ")
 
+saveRDS(bi_words, "C:/Users/laksk/Documents/daisy/bigrams.rds")
+saveRDS(tri_words, "C:/Users/laksk/Documents/daisy/trigrams.rds")
+saveRDS(quad_words,"C:/Users/laksk/Documents/daisy/quadgrams.rds")
+saveRDS(quint_words,"C:/Users/laksk/Documents/daisy/quintgrams.rds")
+saveRDS(sext_words,"C:/Users/laksk/Documents/daisy/sextgrams.rds")
 
-saveRDS(bi_words, "./final/bi_words_top.rds")
-saveRDS(tri_words, "./final/tri_words_top.rds")
-saveRDS(quad_words,"./final/quad_words_top.rds")
-saveRDS(quint_words,"./final/quint_words_top.rds")
-saveRDS(sext_words,"./final/sext_words_top.rds")
